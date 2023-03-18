@@ -13,7 +13,7 @@ const userRoute = require('./routes/userRoutes');
 
 app.use(morgan('dev'));
 app.use(cookieParser())
-app.use(cors({credentials: true, origin: "http://localhost:3000"}));
+app.use(cors({credentials: true, origin: "https://user-authentication-frontend-rho.vercel.app"}));
 app.use(express.json());
 app.use('/api', userRoute);
 
